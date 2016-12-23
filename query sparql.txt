@@ -1,0 +1,29 @@
+# Long lat by id.dbpedia.org
+SELECT DISTINCT ?provinsi ?long ?lat WHERE {
+    ?provinsi rdf:type dbpedia-owl:Province .
+    ?provinsi geo:lat ?lat .
+    ?provinsi geo:long ?long .
+}
+
+
+# Fix data.intip.in + longlat
+PREFIX ex: <http://example.com/filariasis.csv>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT *
+WHERE {
+  	
+  SERVICE <http//data.intip.in/sparql/> {
+    SELECT ?Provinsi ?Populasi_Proyeksi_BPS_2014 ?PDRB_per_kapita_2014_juta_rupiah ?Longitude ?Latitude
+    WHERE {}
+  } .
+  
+  ?ins rdfs:label ?Provinsi .
+  ?ins ex:pemberian_asi_2013 ?pemberian_asi_2013 .
+  ?ins ex:terjangkit ?terjangkit .
+  ?terjangkit ex:penderita_balita_u1 ?penderita_balita_u1 .
+  ?terjangkit ex:penderita_balita_1to4 ?penderita_balita_1to4 .
+}
+
+LIMIT 100
