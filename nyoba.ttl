@@ -1,0 +1,779 @@
+
+
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <http://example.com/filariasis.csv> .
+
+ex:provinsi a rdfs:Class .
+ex:penyakit a rdfs:Class .
+
+ex:kode_provinsi a rdf:Property .
+ex:kode_provinsi rdfs:domain ex:provinsi .
+ex:kode_provinsi rdfs:range xsd:integer .
+
+ex:nama_provinsi a rdf:Property .
+ex:nama_provinsi rdfs:domain ex:provinsi .
+ex:nama_provinsi rdfs:range xsd:string .
+
+ex:pemberian_asi_2013 a rdf:Property .
+ex:pemberian_asi_2013 rdfs:domain ex:penyakit .
+ex:pemberian_asi_2013 rdfs:range xsd:float .
+
+ex:terjangkit a rdf:Property .
+ex:terjangkit rdfs:domain ex:penyakit .
+ex:terjangkit rdfs:range xsd:integer .
+
+ex:penderita_balita_u1 a rdf:Property .
+ex:penderita_balita_u1 rdfs:domain ex:penyakit .
+ex:penderita_balita_u1 rdfs:range xsd:integer .
+
+ex:penderita_balita_1to4 a rdf:Property .
+ex:penderita_balita_1to4 rdfs:domain ex:penyakit .
+ex:penderita_balita_1to4 rdfs:range xsd:integer .
+
+
+ex:Aceh a ex:provinsi .
+ex:Aceh ex:nama_provinsi "Aceh" .
+ex:Aceh ex:pemberian_asi_2013 48.8 .
+	
+ex:Bali a ex:provinsi .
+ex:Bali ex:nama_provinsi "Bali" .
+ex:Bali ex:pemberian_asi_2013 69.3 .
+	
+ex:Banten a ex:provinsi .
+ex:Banten ex:nama_provinsi "Banten" .
+ex:Banten ex:pemberian_asi_2013 47.9 .
+	
+ex:Bengkulu a ex:provinsi .
+ex:Bengkulu ex:nama_provinsi "Bengkulu" .
+ex:Bengkulu ex:pemberian_asi_2013 74.5 .
+	
+ex:Gorontalo a ex:provinsi .
+ex:Gorontalo ex:nama_provinsi "Gorontalo" .
+ex:Gorontalo ex:pemberian_asi_2013 54.1 .
+	
+ex:Jakarta a ex:provinsi .
+ex:Jakarta ex:nama_provinsi "Jakarta" .
+ex:Jakarta ex:pemberian_asi_2013 62.7 .
+	
+ex:Jambi a ex:provinsi .
+ex:Jambi ex:nama_provinsi "Jambi" .
+ex:Jambi ex:pemberian_asi_2013 51.3 .
+	
+ex:Jawa_Barat a ex:provinsi .
+ex:Jawa_Barat ex:nama_provinsi "Jawa Barat" .
+ex:Jawa_Barat ex:pemberian_asi_2013 33.7 .
+	
+ex:Jawa_Tengah a ex:provinsi .
+ex:Jawa_Tengah ex:nama_provinsi "Jawa Tengah" .
+ex:Jawa_Tengah ex:pemberian_asi_2013 58.4 .
+	
+ex:Jawa_Timur a ex:provinsi .
+ex:Jawa_Timur ex:nama_provinsi "Jawa Timur" .
+ex:Jawa_Timur ex:pemberian_asi_2013 70.8 .
+	
+ex:Kalimantan_Barat a ex:provinsi .
+ex:Kalimantan_Barat ex:nama_provinsi "Kalimantan Barat" .
+ex:Kalimantan_Barat ex:pemberian_asi_2013 47.3 .
+	
+ex:Kalimantan_Selatan a ex:provinsi .
+ex:Kalimantan_Selatan ex:nama_provinsi "Kalimantan Selatan" .
+ex:Kalimantan_Selatan ex:pemberian_asi_2013 58.7 .
+	
+ex:Kalimantan_Tengah a ex:provinsi .
+ex:Kalimantan_Tengah ex:nama_provinsi "Kalimantan Tengah" .
+ex:Kalimantan_Tengah ex:pemberian_asi_2013 43.4 .
+	
+ex:Kalimantan_Timur a ex:provinsi .
+ex:Kalimantan_Timur ex:nama_provinsi "Kalimantan Timur" .
+ex:Kalimantan_Timur ex:pemberian_asi_2013 58.9 .
+	
+ex:Kepulauan_Bangka_Belitung a ex:provinsi .
+ex:Kepulauan_Bangka_Belitung ex:nama_provinsi "Kepulauan Bangka Belitung" .
+ex:Kepulauan_Bangka_Belitung ex:pemberian_asi_2013 50.8 .
+	
+ex:Kepulauan_Riau a ex:provinsi .
+ex:Kepulauan_Riau ex:nama_provinsi "Kepulauan Riau" .
+ex:Kepulauan_Riau ex:pemberian_asi_2013 52.6 .
+	
+ex:Lampung a ex:provinsi .
+ex:Lampung ex:nama_provinsi "Lampung" .
+ex:Lampung ex:pemberian_asi_2013 59.4 .
+	
+ex:Maluku a ex:provinsi .
+ex:Maluku ex:nama_provinsi "Maluku" .
+ex:Maluku ex:pemberian_asi_2013 25.2 .
+	
+ex:Maluku_Utara a ex:provinsi .
+ex:Maluku_Utara ex:nama_provinsi "Maluku Utara" .
+ex:Maluku_Utara ex:pemberian_asi_2013 62.7 .
+	
+ex:Nusa_Tenggara_Barat a ex:provinsi .
+ex:Nusa_Tenggara_Barat ex:nama_provinsi "Nusa Tenggara Barat" .
+ex:Nusa_Tenggara_Barat ex:pemberian_asi_2013 79.7 .
+	
+ex:Nusa_Tenggara_Timur a ex:provinsi .
+ex:Nusa_Tenggara_Timur ex:nama_provinsi "Nusa Tenggara Timur" .
+ex:Nusa_Tenggara_Timur ex:pemberian_asi_2013 74.4 .
+	
+ex:Riau a ex:provinsi .
+ex:Riau ex:nama_provinsi "Riau" .
+ex:Riau ex:pemberian_asi_2013 55.9 .
+	
+ex:Sulawesi_Barat a ex:provinsi .
+ex:Sulawesi_Barat ex:nama_provinsi "Sulawesi Barat" .
+ex:Sulawesi_Barat ex:pemberian_asi_2013 66 .
+	
+ex:Sulawesi_Selatan a ex:provinsi .
+ex:Sulawesi_Selatan ex:nama_provinsi "Sulawesi Selatan" .
+ex:Sulawesi_Selatan ex:pemberian_asi_2013 66.5 .
+	
+ex:Sulawesi_Tengah a ex:provinsi .
+ex:Sulawesi_Tengah ex:nama_provinsi "Sulawesi Tengah" .
+ex:Sulawesi_Tengah ex:pemberian_asi_2013 62.3 .
+	
+ex:Sulawesi_Tenggara a ex:provinsi .
+ex:Sulawesi_Tenggara ex:nama_provinsi "Sulawesi Tenggara" .
+ex:Sulawesi_Tenggara ex:pemberian_asi_2013 56 .
+	
+ex:Sulawesi_Utara a ex:provinsi .
+ex:Sulawesi_Utara ex:nama_provinsi "Sulawesi Utara" .
+ex:Sulawesi_Utara ex:pemberian_asi_2013 34.7 .
+	
+ex:Sumatera_Barat a ex:provinsi .
+ex:Sumatera_Barat ex:nama_provinsi "Sumatera Barat" .
+ex:Sumatera_Barat ex:pemberian_asi_2013 63.9 .
+	
+ex:Sumatera_Selatan a ex:provinsi .
+ex:Sumatera_Selatan ex:nama_provinsi "Sumatera Selatan" .
+ex:Sumatera_Selatan ex:pemberian_asi_2013 63.9 .
+	
+ex:Sumatera_Utara a ex:provinsi .
+ex:Sumatera_Utara ex:nama_provinsi "Sumatera Utara" .
+ex:Sumatera_Utara ex:pemberian_asi_2013 41.3 .
+	
+ex:Yogyakarta a ex:provinsi .
+ex:Yogyakarta ex:nama_provinsi "Yogyakarta" .
+ex:Yogyakarta ex:pemberian_asi_2013 67.9 .
+	
+ex:Aceh ex:terjangkit ex:pneumonia_ringan_Aceh_2012 .
+ex:Aceh rdfs:label "Aceh" .
+ex:Aceh rdfs:kode_provinsi "0" .
+ex:pneumonia_ringan_Aceh_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Aceh_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Aceh ex:terjangkit ex:pneumonia_berat_Aceh_2012 .
+ex:pneumonia_berat_Aceh_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Aceh_2012 ex:penderita_balita_1to4 23 .
+
+ex:Aceh ex:terjangkit ex:pneumonia_ringan_Aceh_2012 .
+ex:Aceh rdfs:label "Aceh" .
+ex:Aceh rdfs:kode_provinsi "1" .
+ex:pneumonia_ringan_Aceh_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Aceh_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Aceh ex:terjangkit ex:pneumonia_berat_Aceh_2012 .
+ex:pneumonia_berat_Aceh_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Aceh_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sumatera_Utara ex:terjangkit ex:pneumonia_ringan_Sumatera_Utara_2012 .
+ex:Sumatera_Utara rdfs:label "Sumatera Utara" .
+ex:Sumatera_Utara rdfs:kode_provinsi "2" .
+ex:pneumonia_ringan_Sumatera_Utara_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sumatera_Utara_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sumatera_Utara ex:terjangkit ex:pneumonia_berat_Sumatera_Utara_2012 .
+ex:pneumonia_berat_Sumatera_Utara_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sumatera_Utara_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sumatera_Utara ex:terjangkit ex:pneumonia_ringan_Sumatera_Utara_2012 .
+ex:Sumatera_Utara rdfs:label "Sumatera Utara" .
+ex:Sumatera_Utara rdfs:kode_provinsi "3" .
+ex:pneumonia_ringan_Sumatera_Utara_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sumatera_Utara_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sumatera_Utara ex:terjangkit ex:pneumonia_berat_Sumatera_Utara_2012 .
+ex:pneumonia_berat_Sumatera_Utara_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sumatera_Utara_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sumatera_Barat ex:terjangkit ex:pneumonia_ringan_Sumatera_Barat_2012 .
+ex:Sumatera_Barat rdfs:label "Sumatera Barat" .
+ex:Sumatera_Barat rdfs:kode_provinsi "4" .
+ex:pneumonia_ringan_Sumatera_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sumatera_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sumatera_Barat ex:terjangkit ex:pneumonia_berat_Sumatera_Barat_2012 .
+ex:pneumonia_berat_Sumatera_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sumatera_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sumatera_Barat ex:terjangkit ex:pneumonia_ringan_Sumatera_Barat_2012 .
+ex:Sumatera_Barat rdfs:label "Sumatera Barat" .
+ex:Sumatera_Barat rdfs:kode_provinsi "5" .
+ex:pneumonia_ringan_Sumatera_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sumatera_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sumatera_Barat ex:terjangkit ex:pneumonia_berat_Sumatera_Barat_2012 .
+ex:pneumonia_berat_Sumatera_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sumatera_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Riau ex:terjangkit ex:pneumonia_ringan_Riau_2012 .
+ex:Riau rdfs:label "Riau" .
+ex:Riau rdfs:kode_provinsi "6" .
+ex:pneumonia_ringan_Riau_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Riau_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Riau ex:terjangkit ex:pneumonia_berat_Riau_2012 .
+ex:pneumonia_berat_Riau_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Riau_2012 ex:penderita_balita_1to4 23 .
+
+ex:Riau ex:terjangkit ex:pneumonia_ringan_Riau_2012 .
+ex:Riau rdfs:label "Riau" .
+ex:Riau rdfs:kode_provinsi "7" .
+ex:pneumonia_ringan_Riau_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Riau_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Riau ex:terjangkit ex:pneumonia_berat_Riau_2012 .
+ex:pneumonia_berat_Riau_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Riau_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jambi ex:terjangkit ex:pneumonia_ringan_Jambi_2012 .
+ex:Jambi rdfs:label "Jambi" .
+ex:Jambi rdfs:kode_provinsi "8" .
+ex:pneumonia_ringan_Jambi_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jambi_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jambi ex:terjangkit ex:pneumonia_berat_Jambi_2012 .
+ex:pneumonia_berat_Jambi_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jambi_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jambi ex:terjangkit ex:pneumonia_ringan_Jambi_2012 .
+ex:Jambi rdfs:label "Jambi" .
+ex:Jambi rdfs:kode_provinsi "9" .
+ex:pneumonia_ringan_Jambi_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jambi_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jambi ex:terjangkit ex:pneumonia_berat_Jambi_2012 .
+ex:pneumonia_berat_Jambi_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jambi_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sumatera_Selatan ex:terjangkit ex:pneumonia_ringan_Sumatera_Selatan_2012 .
+ex:Sumatera_Selatan rdfs:label "Sumatera Selatan" .
+ex:Sumatera_Selatan rdfs:kode_provinsi "10" .
+ex:pneumonia_ringan_Sumatera_Selatan_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sumatera_Selatan_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sumatera_Selatan ex:terjangkit ex:pneumonia_berat_Sumatera_Selatan_2012 .
+ex:pneumonia_berat_Sumatera_Selatan_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sumatera_Selatan_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sumatera_Selatan ex:terjangkit ex:pneumonia_ringan_Sumatera_Selatan_2012 .
+ex:Sumatera_Selatan rdfs:label "Sumatera Selatan" .
+ex:Sumatera_Selatan rdfs:kode_provinsi "11" .
+ex:pneumonia_ringan_Sumatera_Selatan_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sumatera_Selatan_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sumatera_Selatan ex:terjangkit ex:pneumonia_berat_Sumatera_Selatan_2012 .
+ex:pneumonia_berat_Sumatera_Selatan_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sumatera_Selatan_2012 ex:penderita_balita_1to4 23 .
+
+ex:Bengkulu ex:terjangkit ex:pneumonia_ringan_Bengkulu_2012 .
+ex:Bengkulu rdfs:label "Bengkulu" .
+ex:Bengkulu rdfs:kode_provinsi "12" .
+ex:pneumonia_ringan_Bengkulu_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Bengkulu_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Bengkulu ex:terjangkit ex:pneumonia_berat_Bengkulu_2012 .
+ex:pneumonia_berat_Bengkulu_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Bengkulu_2012 ex:penderita_balita_1to4 23 .
+
+ex:Bengkulu ex:terjangkit ex:pneumonia_ringan_Bengkulu_2012 .
+ex:Bengkulu rdfs:label "Bengkulu" .
+ex:Bengkulu rdfs:kode_provinsi "13" .
+ex:pneumonia_ringan_Bengkulu_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Bengkulu_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Bengkulu ex:terjangkit ex:pneumonia_berat_Bengkulu_2012 .
+ex:pneumonia_berat_Bengkulu_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Bengkulu_2012 ex:penderita_balita_1to4 23 .
+
+ex:Lampung ex:terjangkit ex:pneumonia_ringan_Lampung_2012 .
+ex:Lampung rdfs:label "Lampung" .
+ex:Lampung rdfs:kode_provinsi "14" .
+ex:pneumonia_ringan_Lampung_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Lampung_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Lampung ex:terjangkit ex:pneumonia_berat_Lampung_2012 .
+ex:pneumonia_berat_Lampung_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Lampung_2012 ex:penderita_balita_1to4 23 .
+
+ex:Lampung ex:terjangkit ex:pneumonia_ringan_Lampung_2012 .
+ex:Lampung rdfs:label "Lampung" .
+ex:Lampung rdfs:kode_provinsi "15" .
+ex:pneumonia_ringan_Lampung_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Lampung_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Lampung ex:terjangkit ex:pneumonia_berat_Lampung_2012 .
+ex:pneumonia_berat_Lampung_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Lampung_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kepulauan_Bangka_Belitung ex:terjangkit ex:pneumonia_ringan_Kepulauan_Bangka_Belitung_2012 .
+ex:Kepulauan_Bangka_Belitung rdfs:label "Kepulauan Bangka Belitung" .
+ex:Kepulauan_Bangka_Belitung rdfs:kode_provinsi "16" .
+ex:pneumonia_ringan_Kepulauan_Bangka_Belitung_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kepulauan_Bangka_Belitung_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kepulauan_Bangka_Belitung ex:terjangkit ex:pneumonia_berat_Kepulauan_Bangka_Belitung_2012 .
+ex:pneumonia_berat_Kepulauan_Bangka_Belitung_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kepulauan_Bangka_Belitung_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kepulauan_Bangka_Belitung ex:terjangkit ex:pneumonia_ringan_Kepulauan_Bangka_Belitung_2012 .
+ex:Kepulauan_Bangka_Belitung rdfs:label "Kepulauan Bangka Belitung" .
+ex:Kepulauan_Bangka_Belitung rdfs:kode_provinsi "17" .
+ex:pneumonia_ringan_Kepulauan_Bangka_Belitung_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kepulauan_Bangka_Belitung_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kepulauan_Bangka_Belitung ex:terjangkit ex:pneumonia_berat_Kepulauan_Bangka_Belitung_2012 .
+ex:pneumonia_berat_Kepulauan_Bangka_Belitung_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kepulauan_Bangka_Belitung_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kepulauan_Riau ex:terjangkit ex:pneumonia_ringan_Kepulauan_Riau_2012 .
+ex:Kepulauan_Riau rdfs:label "Kepulauan Riau" .
+ex:Kepulauan_Riau rdfs:kode_provinsi "18" .
+ex:pneumonia_ringan_Kepulauan_Riau_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kepulauan_Riau_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kepulauan_Riau ex:terjangkit ex:pneumonia_berat_Kepulauan_Riau_2012 .
+ex:pneumonia_berat_Kepulauan_Riau_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kepulauan_Riau_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kepulauan_Riau ex:terjangkit ex:pneumonia_ringan_Kepulauan_Riau_2012 .
+ex:Kepulauan_Riau rdfs:label "Kepulauan Riau" .
+ex:Kepulauan_Riau rdfs:kode_provinsi "19" .
+ex:pneumonia_ringan_Kepulauan_Riau_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kepulauan_Riau_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kepulauan_Riau ex:terjangkit ex:pneumonia_berat_Kepulauan_Riau_2012 .
+ex:pneumonia_berat_Kepulauan_Riau_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kepulauan_Riau_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jakarta ex:terjangkit ex:pneumonia_ringan_Jakarta_2012 .
+ex:Jakarta rdfs:label "Jakarta" .
+ex:Jakarta rdfs:kode_provinsi "20" .
+ex:pneumonia_ringan_Jakarta_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jakarta_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jakarta ex:terjangkit ex:pneumonia_berat_Jakarta_2012 .
+ex:pneumonia_berat_Jakarta_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jakarta_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jakarta ex:terjangkit ex:pneumonia_ringan_Jakarta_2012 .
+ex:Jakarta rdfs:label "Jakarta" .
+ex:Jakarta rdfs:kode_provinsi "21" .
+ex:pneumonia_ringan_Jakarta_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jakarta_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jakarta ex:terjangkit ex:pneumonia_berat_Jakarta_2012 .
+ex:pneumonia_berat_Jakarta_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jakarta_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jawa_Barat ex:terjangkit ex:pneumonia_ringan_Jawa_Barat_2012 .
+ex:Jawa_Barat rdfs:label "Jawa Barat" .
+ex:Jawa_Barat rdfs:kode_provinsi "22" .
+ex:pneumonia_ringan_Jawa_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jawa_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jawa_Barat ex:terjangkit ex:pneumonia_berat_Jawa_Barat_2012 .
+ex:pneumonia_berat_Jawa_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jawa_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jawa_Barat ex:terjangkit ex:pneumonia_ringan_Jawa_Barat_2012 .
+ex:Jawa_Barat rdfs:label "Jawa Barat" .
+ex:Jawa_Barat rdfs:kode_provinsi "23" .
+ex:pneumonia_ringan_Jawa_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jawa_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jawa_Barat ex:terjangkit ex:pneumonia_berat_Jawa_Barat_2012 .
+ex:pneumonia_berat_Jawa_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jawa_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jawa_Tengah ex:terjangkit ex:pneumonia_ringan_Jawa_Tengah_2012 .
+ex:Jawa_Tengah rdfs:label "Jawa Tengah" .
+ex:Jawa_Tengah rdfs:kode_provinsi "24" .
+ex:pneumonia_ringan_Jawa_Tengah_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jawa_Tengah_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jawa_Tengah ex:terjangkit ex:pneumonia_berat_Jawa_Tengah_2012 .
+ex:pneumonia_berat_Jawa_Tengah_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jawa_Tengah_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jawa_Tengah ex:terjangkit ex:pneumonia_ringan_Jawa_Tengah_2012 .
+ex:Jawa_Tengah rdfs:label "Jawa Tengah" .
+ex:Jawa_Tengah rdfs:kode_provinsi "25" .
+ex:pneumonia_ringan_Jawa_Tengah_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jawa_Tengah_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jawa_Tengah ex:terjangkit ex:pneumonia_berat_Jawa_Tengah_2012 .
+ex:pneumonia_berat_Jawa_Tengah_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jawa_Tengah_2012 ex:penderita_balita_1to4 23 .
+
+ex:Yogyakarta ex:terjangkit ex:pneumonia_ringan_Yogyakarta_2012 .
+ex:Yogyakarta rdfs:label "Yogyakarta" .
+ex:Yogyakarta rdfs:kode_provinsi "26" .
+ex:pneumonia_ringan_Yogyakarta_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Yogyakarta_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Yogyakarta ex:terjangkit ex:pneumonia_berat_Yogyakarta_2012 .
+ex:pneumonia_berat_Yogyakarta_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Yogyakarta_2012 ex:penderita_balita_1to4 23 .
+
+ex:Yogyakarta ex:terjangkit ex:pneumonia_ringan_Yogyakarta_2012 .
+ex:Yogyakarta rdfs:label "Yogyakarta" .
+ex:Yogyakarta rdfs:kode_provinsi "27" .
+ex:pneumonia_ringan_Yogyakarta_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Yogyakarta_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Yogyakarta ex:terjangkit ex:pneumonia_berat_Yogyakarta_2012 .
+ex:pneumonia_berat_Yogyakarta_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Yogyakarta_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jawa_Timur ex:terjangkit ex:pneumonia_ringan_Jawa_Timur_2012 .
+ex:Jawa_Timur rdfs:label "Jawa Timur" .
+ex:Jawa_Timur rdfs:kode_provinsi "28" .
+ex:pneumonia_ringan_Jawa_Timur_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jawa_Timur_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jawa_Timur ex:terjangkit ex:pneumonia_berat_Jawa_Timur_2012 .
+ex:pneumonia_berat_Jawa_Timur_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jawa_Timur_2012 ex:penderita_balita_1to4 23 .
+
+ex:Jawa_Timur ex:terjangkit ex:pneumonia_ringan_Jawa_Timur_2012 .
+ex:Jawa_Timur rdfs:label "Jawa Timur" .
+ex:Jawa_Timur rdfs:kode_provinsi "29" .
+ex:pneumonia_ringan_Jawa_Timur_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Jawa_Timur_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Jawa_Timur ex:terjangkit ex:pneumonia_berat_Jawa_Timur_2012 .
+ex:pneumonia_berat_Jawa_Timur_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Jawa_Timur_2012 ex:penderita_balita_1to4 23 .
+
+ex:Banten ex:terjangkit ex:pneumonia_ringan_Banten_2012 .
+ex:Banten rdfs:label "Banten" .
+ex:Banten rdfs:kode_provinsi "30" .
+ex:pneumonia_ringan_Banten_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Banten_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Banten ex:terjangkit ex:pneumonia_berat_Banten_2012 .
+ex:pneumonia_berat_Banten_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Banten_2012 ex:penderita_balita_1to4 23 .
+
+ex:Banten ex:terjangkit ex:pneumonia_ringan_Banten_2012 .
+ex:Banten rdfs:label "Banten" .
+ex:Banten rdfs:kode_provinsi "31" .
+ex:pneumonia_ringan_Banten_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Banten_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Banten ex:terjangkit ex:pneumonia_berat_Banten_2012 .
+ex:pneumonia_berat_Banten_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Banten_2012 ex:penderita_balita_1to4 23 .
+
+ex:Bali ex:terjangkit ex:pneumonia_ringan_Bali_2012 .
+ex:Bali rdfs:label "Bali" .
+ex:Bali rdfs:kode_provinsi "32" .
+ex:pneumonia_ringan_Bali_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Bali_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Bali ex:terjangkit ex:pneumonia_berat_Bali_2012 .
+ex:pneumonia_berat_Bali_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Bali_2012 ex:penderita_balita_1to4 23 .
+
+ex:Bali ex:terjangkit ex:pneumonia_ringan_Bali_2012 .
+ex:Bali rdfs:label "Bali" .
+ex:Bali rdfs:kode_provinsi "33" .
+ex:pneumonia_ringan_Bali_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Bali_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Bali ex:terjangkit ex:pneumonia_berat_Bali_2012 .
+ex:pneumonia_berat_Bali_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Bali_2012 ex:penderita_balita_1to4 23 .
+
+ex:Nusa_Tenggara_Barat ex:terjangkit ex:pneumonia_ringan_Nusa_Tenggara_Barat_2012 .
+ex:Nusa_Tenggara_Barat rdfs:label "Nusa Tenggara Barat" .
+ex:Nusa_Tenggara_Barat rdfs:kode_provinsi "34" .
+ex:pneumonia_ringan_Nusa_Tenggara_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Nusa_Tenggara_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Nusa_Tenggara_Barat ex:terjangkit ex:pneumonia_berat_Nusa_Tenggara_Barat_2012 .
+ex:pneumonia_berat_Nusa_Tenggara_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Nusa_Tenggara_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Nusa_Tenggara_Barat ex:terjangkit ex:pneumonia_ringan_Nusa_Tenggara_Barat_2012 .
+ex:Nusa_Tenggara_Barat rdfs:label "Nusa Tenggara Barat" .
+ex:Nusa_Tenggara_Barat rdfs:kode_provinsi "35" .
+ex:pneumonia_ringan_Nusa_Tenggara_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Nusa_Tenggara_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Nusa_Tenggara_Barat ex:terjangkit ex:pneumonia_berat_Nusa_Tenggara_Barat_2012 .
+ex:pneumonia_berat_Nusa_Tenggara_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Nusa_Tenggara_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Nusa_Tenggara_Timur ex:terjangkit ex:pneumonia_ringan_Nusa_Tenggara_Timur_2012 .
+ex:Nusa_Tenggara_Timur rdfs:label "Nusa Tenggara Timur" .
+ex:Nusa_Tenggara_Timur rdfs:kode_provinsi "36" .
+ex:pneumonia_ringan_Nusa_Tenggara_Timur_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Nusa_Tenggara_Timur_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Nusa_Tenggara_Timur ex:terjangkit ex:pneumonia_berat_Nusa_Tenggara_Timur_2012 .
+ex:pneumonia_berat_Nusa_Tenggara_Timur_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Nusa_Tenggara_Timur_2012 ex:penderita_balita_1to4 23 .
+
+ex:Nusa_Tenggara_Timur ex:terjangkit ex:pneumonia_ringan_Nusa_Tenggara_Timur_2012 .
+ex:Nusa_Tenggara_Timur rdfs:label "Nusa Tenggara Timur" .
+ex:Nusa_Tenggara_Timur rdfs:kode_provinsi "37" .
+ex:pneumonia_ringan_Nusa_Tenggara_Timur_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Nusa_Tenggara_Timur_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Nusa_Tenggara_Timur ex:terjangkit ex:pneumonia_berat_Nusa_Tenggara_Timur_2012 .
+ex:pneumonia_berat_Nusa_Tenggara_Timur_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Nusa_Tenggara_Timur_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kalimantan_Barat ex:terjangkit ex:pneumonia_ringan_Kalimantan_Barat_2012 .
+ex:Kalimantan_Barat rdfs:label "Kalimantan Barat" .
+ex:Kalimantan_Barat rdfs:kode_provinsi "38" .
+ex:pneumonia_ringan_Kalimantan_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kalimantan_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kalimantan_Barat ex:terjangkit ex:pneumonia_berat_Kalimantan_Barat_2012 .
+ex:pneumonia_berat_Kalimantan_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kalimantan_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kalimantan_Barat ex:terjangkit ex:pneumonia_ringan_Kalimantan_Barat_2012 .
+ex:Kalimantan_Barat rdfs:label "Kalimantan Barat" .
+ex:Kalimantan_Barat rdfs:kode_provinsi "39" .
+ex:pneumonia_ringan_Kalimantan_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kalimantan_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kalimantan_Barat ex:terjangkit ex:pneumonia_berat_Kalimantan_Barat_2012 .
+ex:pneumonia_berat_Kalimantan_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kalimantan_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kalimantan_Tengah ex:terjangkit ex:pneumonia_ringan_Kalimantan_Tengah_2012 .
+ex:Kalimantan_Tengah rdfs:label "Kalimantan Tengah" .
+ex:Kalimantan_Tengah rdfs:kode_provinsi "40" .
+ex:pneumonia_ringan_Kalimantan_Tengah_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kalimantan_Tengah_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kalimantan_Tengah ex:terjangkit ex:pneumonia_berat_Kalimantan_Tengah_2012 .
+ex:pneumonia_berat_Kalimantan_Tengah_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kalimantan_Tengah_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kalimantan_Tengah ex:terjangkit ex:pneumonia_ringan_Kalimantan_Tengah_2012 .
+ex:Kalimantan_Tengah rdfs:label "Kalimantan Tengah" .
+ex:Kalimantan_Tengah rdfs:kode_provinsi "41" .
+ex:pneumonia_ringan_Kalimantan_Tengah_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kalimantan_Tengah_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kalimantan_Tengah ex:terjangkit ex:pneumonia_berat_Kalimantan_Tengah_2012 .
+ex:pneumonia_berat_Kalimantan_Tengah_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kalimantan_Tengah_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kalimantan_Tengah ex:terjangkit ex:pneumonia_ringan_Kalimantan_Tengah_2012 .
+ex:Kalimantan_Tengah rdfs:label "Kalimantan Tengah" .
+ex:Kalimantan_Tengah rdfs:kode_provinsi "42" .
+ex:pneumonia_ringan_Kalimantan_Tengah_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kalimantan_Tengah_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kalimantan_Tengah ex:terjangkit ex:pneumonia_berat_Kalimantan_Tengah_2012 .
+ex:pneumonia_berat_Kalimantan_Tengah_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kalimantan_Tengah_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kalimantan_Selatan ex:terjangkit ex:pneumonia_ringan_Kalimantan_Selatan_2012 .
+ex:Kalimantan_Selatan rdfs:label "Kalimantan Selatan" .
+ex:Kalimantan_Selatan rdfs:kode_provinsi "43" .
+ex:pneumonia_ringan_Kalimantan_Selatan_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kalimantan_Selatan_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kalimantan_Selatan ex:terjangkit ex:pneumonia_berat_Kalimantan_Selatan_2012 .
+ex:pneumonia_berat_Kalimantan_Selatan_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kalimantan_Selatan_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kalimantan_Timur ex:terjangkit ex:pneumonia_ringan_Kalimantan_Timur_2012 .
+ex:Kalimantan_Timur rdfs:label "Kalimantan Timur" .
+ex:Kalimantan_Timur rdfs:kode_provinsi "44" .
+ex:pneumonia_ringan_Kalimantan_Timur_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kalimantan_Timur_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kalimantan_Timur ex:terjangkit ex:pneumonia_berat_Kalimantan_Timur_2012 .
+ex:pneumonia_berat_Kalimantan_Timur_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kalimantan_Timur_2012 ex:penderita_balita_1to4 23 .
+
+ex:Kalimantan_Timur ex:terjangkit ex:pneumonia_ringan_Kalimantan_Timur_2012 .
+ex:Kalimantan_Timur rdfs:label "Kalimantan Timur" .
+ex:Kalimantan_Timur rdfs:kode_provinsi "45" .
+ex:pneumonia_ringan_Kalimantan_Timur_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Kalimantan_Timur_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Kalimantan_Timur ex:terjangkit ex:pneumonia_berat_Kalimantan_Timur_2012 .
+ex:pneumonia_berat_Kalimantan_Timur_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Kalimantan_Timur_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Utara ex:terjangkit ex:pneumonia_ringan_Sulawesi_Utara_2012 .
+ex:Sulawesi_Utara rdfs:label "Sulawesi Utara" .
+ex:Sulawesi_Utara rdfs:kode_provinsi "46" .
+ex:pneumonia_ringan_Sulawesi_Utara_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Utara_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Utara ex:terjangkit ex:pneumonia_berat_Sulawesi_Utara_2012 .
+ex:pneumonia_berat_Sulawesi_Utara_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Utara_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Utara ex:terjangkit ex:pneumonia_ringan_Sulawesi_Utara_2012 .
+ex:Sulawesi_Utara rdfs:label "Sulawesi Utara" .
+ex:Sulawesi_Utara rdfs:kode_provinsi "47" .
+ex:pneumonia_ringan_Sulawesi_Utara_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Utara_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Utara ex:terjangkit ex:pneumonia_berat_Sulawesi_Utara_2012 .
+ex:pneumonia_berat_Sulawesi_Utara_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Utara_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Tengah ex:terjangkit ex:pneumonia_ringan_Sulawesi_Tengah_2012 .
+ex:Sulawesi_Tengah rdfs:label "Sulawesi Tengah" .
+ex:Sulawesi_Tengah rdfs:kode_provinsi "48" .
+ex:pneumonia_ringan_Sulawesi_Tengah_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Tengah_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Tengah ex:terjangkit ex:pneumonia_berat_Sulawesi_Tengah_2012 .
+ex:pneumonia_berat_Sulawesi_Tengah_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Tengah_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Tengah ex:terjangkit ex:pneumonia_ringan_Sulawesi_Tengah_2012 .
+ex:Sulawesi_Tengah rdfs:label "Sulawesi Tengah" .
+ex:Sulawesi_Tengah rdfs:kode_provinsi "49" .
+ex:pneumonia_ringan_Sulawesi_Tengah_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Tengah_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Tengah ex:terjangkit ex:pneumonia_berat_Sulawesi_Tengah_2012 .
+ex:pneumonia_berat_Sulawesi_Tengah_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Tengah_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Selatan ex:terjangkit ex:pneumonia_ringan_Sulawesi_Selatan_2012 .
+ex:Sulawesi_Selatan rdfs:label "Sulawesi Selatan" .
+ex:Sulawesi_Selatan rdfs:kode_provinsi "50" .
+ex:pneumonia_ringan_Sulawesi_Selatan_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Selatan_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Selatan ex:terjangkit ex:pneumonia_berat_Sulawesi_Selatan_2012 .
+ex:pneumonia_berat_Sulawesi_Selatan_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Selatan_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Selatan ex:terjangkit ex:pneumonia_ringan_Sulawesi_Selatan_2012 .
+ex:Sulawesi_Selatan rdfs:label "Sulawesi Selatan" .
+ex:Sulawesi_Selatan rdfs:kode_provinsi "51" .
+ex:pneumonia_ringan_Sulawesi_Selatan_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Selatan_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Selatan ex:terjangkit ex:pneumonia_berat_Sulawesi_Selatan_2012 .
+ex:pneumonia_berat_Sulawesi_Selatan_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Selatan_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Tenggara ex:terjangkit ex:pneumonia_ringan_Sulawesi_Tenggara_2012 .
+ex:Sulawesi_Tenggara rdfs:label "Sulawesi Tenggara" .
+ex:Sulawesi_Tenggara rdfs:kode_provinsi "52" .
+ex:pneumonia_ringan_Sulawesi_Tenggara_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Tenggara_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Tenggara ex:terjangkit ex:pneumonia_berat_Sulawesi_Tenggara_2012 .
+ex:pneumonia_berat_Sulawesi_Tenggara_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Tenggara_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Tenggara ex:terjangkit ex:pneumonia_ringan_Sulawesi_Tenggara_2012 .
+ex:Sulawesi_Tenggara rdfs:label "Sulawesi Tenggara" .
+ex:Sulawesi_Tenggara rdfs:kode_provinsi "53" .
+ex:pneumonia_ringan_Sulawesi_Tenggara_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Tenggara_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Tenggara ex:terjangkit ex:pneumonia_berat_Sulawesi_Tenggara_2012 .
+ex:pneumonia_berat_Sulawesi_Tenggara_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Tenggara_2012 ex:penderita_balita_1to4 23 .
+
+ex:Gorontalo ex:terjangkit ex:pneumonia_ringan_Gorontalo_2012 .
+ex:Gorontalo rdfs:label "Gorontalo" .
+ex:Gorontalo rdfs:kode_provinsi "54" .
+ex:pneumonia_ringan_Gorontalo_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Gorontalo_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Gorontalo ex:terjangkit ex:pneumonia_berat_Gorontalo_2012 .
+ex:pneumonia_berat_Gorontalo_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Gorontalo_2012 ex:penderita_balita_1to4 23 .
+
+ex:Gorontalo ex:terjangkit ex:pneumonia_ringan_Gorontalo_2012 .
+ex:Gorontalo rdfs:label "Gorontalo" .
+ex:Gorontalo rdfs:kode_provinsi "55" .
+ex:pneumonia_ringan_Gorontalo_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Gorontalo_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Gorontalo ex:terjangkit ex:pneumonia_berat_Gorontalo_2012 .
+ex:pneumonia_berat_Gorontalo_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Gorontalo_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Barat ex:terjangkit ex:pneumonia_ringan_Sulawesi_Barat_2012 .
+ex:Sulawesi_Barat rdfs:label "Sulawesi Barat" .
+ex:Sulawesi_Barat rdfs:kode_provinsi "56" .
+ex:pneumonia_ringan_Sulawesi_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Barat ex:terjangkit ex:pneumonia_berat_Sulawesi_Barat_2012 .
+ex:pneumonia_berat_Sulawesi_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Sulawesi_Barat ex:terjangkit ex:pneumonia_ringan_Sulawesi_Barat_2012 .
+ex:Sulawesi_Barat rdfs:label "Sulawesi Barat" .
+ex:Sulawesi_Barat rdfs:kode_provinsi "57" .
+ex:pneumonia_ringan_Sulawesi_Barat_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Sulawesi_Barat_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Sulawesi_Barat ex:terjangkit ex:pneumonia_berat_Sulawesi_Barat_2012 .
+ex:pneumonia_berat_Sulawesi_Barat_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Sulawesi_Barat_2012 ex:penderita_balita_1to4 23 .
+
+ex:Maluku ex:terjangkit ex:pneumonia_ringan_Maluku_2012 .
+ex:Maluku rdfs:label "Maluku" .
+ex:Maluku rdfs:kode_provinsi "58" .
+ex:pneumonia_ringan_Maluku_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Maluku_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Maluku ex:terjangkit ex:pneumonia_berat_Maluku_2012 .
+ex:pneumonia_berat_Maluku_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Maluku_2012 ex:penderita_balita_1to4 23 .
+
+ex:Maluku ex:terjangkit ex:pneumonia_ringan_Maluku_2012 .
+ex:Maluku rdfs:label "Maluku" .
+ex:Maluku rdfs:kode_provinsi "59" .
+ex:pneumonia_ringan_Maluku_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Maluku_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Maluku ex:terjangkit ex:pneumonia_berat_Maluku_2012 .
+ex:pneumonia_berat_Maluku_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Maluku_2012 ex:penderita_balita_1to4 23 .
+
+ex:Maluku_Utara ex:terjangkit ex:pneumonia_ringan_Maluku_Utara_2012 .
+ex:Maluku_Utara rdfs:label "Maluku Utara" .
+ex:Maluku_Utara rdfs:kode_provinsi "60" .
+ex:pneumonia_ringan_Maluku_Utara_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Maluku_Utara_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Maluku_Utara ex:terjangkit ex:pneumonia_berat_Maluku_Utara_2012 .
+ex:pneumonia_berat_Maluku_Utara_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Maluku_Utara_2012 ex:penderita_balita_1to4 23 .
+
+ex:Maluku_Utara ex:terjangkit ex:pneumonia_ringan_Maluku_Utara_2012 .
+ex:Maluku_Utara rdfs:label "Maluku Utara" .
+ex:Maluku_Utara rdfs:kode_provinsi "61" .
+ex:pneumonia_ringan_Maluku_Utara_2012 ex:penderita_balita_u1 354 .
+ex:pneumonia_ringan_Maluku_Utara_2012 ex:penderita_balita_1to4 1316 .
+
+ex:Maluku_Utara ex:terjangkit ex:pneumonia_berat_Maluku_Utara_2012 .
+ex:pneumonia_berat_Maluku_Utara_2012 ex:penderita_balita_u1 25 .
+ex:pneumonia_berat_Maluku_Utara_2012 ex:penderita_balita_1to4 23 .
+
