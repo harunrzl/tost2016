@@ -1,0 +1,21 @@
+> presentase <- queryResults_filtered
+> presentase$Provinsi <- NULL
+> presentase$terjangkit <- NULL
+> presentase$Longitude <- NULL
+> presentase$Latitude <- NULL
+
+> presentase$Populasi_Proyeksi_BPS_2014 <- NULL
+> results <- kmeans( presentase, 3 )
+
+> presentase$cluster <- results$cluster
+> View(presentase)
+
+> pers_penyakit = data.frame( presentase$cluster, queryResults_filtered$Latitude, queryResults_filtered$Longitude )
+> colnames( pers_penyakit ) = c( 'cluster', 'lat', 'long' )
+
+> library(ggmap)
+> mapzoom = OSM_scale_lookup(zoom = 6)
+> indoMap = ggmap(get_openstreetmap(bbox = c(left = 94.328, bottom = -13.795, right = 140.977, top = 12.426), scale = mapzoom), extent="normal")
+indoMap +
+geom_point(aes(x=long, y=lat, color=factor(cluster)), data=pers_penyakit, alpha=0.4, size=4) +
+scale_colour_manual(values = c("yellow","red", "blue"))
